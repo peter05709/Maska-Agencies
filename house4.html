@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Navigation-->
+    <header class="navbar">
+      
+        <div class="logo"></div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="help.html">Help</a>
+        </nav>
+    </header>
+
+    <main>
+
+    <!--Home Header-->
+    <section class="welcome">
+        <h1>Bella Vista</h1>
+        <p><b>Location:</b> Nchiru, near Meru Maua road</p>
+    </section>
+
+        <!--image gallery-->
+        <section class="image-gallery">
+            <div class="image-container">
+                <button class="prev"><i class="fa fa-chevron-left"></i></button>
+                <div class="image-thumbnails">
+                    <img src="house4/image1.jpg" alt="blue villa">
+                    <img src="house4/home.jpg" alt="blue villa">
+                    <img src="house4/home1.jpg" alt="blue villa">
+                    <img src="house4/home2.jpg" alt="blue villa">
+                    <img src="house4/home3.jpg" alt="blue villa">
+                    <img src="house4/home4.jpg" alt="blue villa">
+                </div>
+                <button class="next"><i class="fa fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!--description-->
+        <section class="description">
+            <h2>Property Description</h2>
+            <p><b>Price:</b> <i>Ksh 65,000 / month </i></p>
+            <p>Charming 3-bedroom townhouse with modern amenities and elegant interiors.<br> 
+               Nestled in the tranquil Bella Vista community,<br> this townhouse offers a perfect blend
+               of comfort and style for families seeking a serene living environment.
+            </p>
+        </section>
+
+        <!--Features-->
+        <section class="features">
+            <h3>Features</h3>
+            <ul>
+                <li><i class="fa-solid fa-bed"></i> 3 Bedrooms</li>
+                <li><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+                <li><i class="fa-solid fa-car"></i> Parking Space</li>
+                <li><i class="fa-solid fa-lock"></i> 24/7 Security</li>
+            </ul>
+        </section>
+
+        <!--landlord-->
+        <section class="landlord">
+            <h3>Contact the Landlord</h3>
+            <form class="landlord-form">
+                <input type="text" name="name" placeholder="Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
+                <button class="btn" type="submit"><b>Send Message</b></button>
+            </form>
+
+    </main>    
+
+        <!--footer-->
+    <footer class="footer">
+        <p>&copy; 2025 Maska Agencies | All Rights Reserved</p>
+    </footer>
+ 
+</body>
+<script src="script.js"></script>
+</html>

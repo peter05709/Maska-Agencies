@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <!--Navigation-->
+    <header class="navbar">
+      
+        <div class="logo"></div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="help.html">Help</a>
+            <a href="#" id="logoutlink">Logout</a>
+        </nav>
+    </header>
+
+    <!--Welcome Section-->
+    <section class="welcome">
+        <h1>Welcome to Maska Agencies</h1>
+        <p><i>Your one-stop solution for all your rental needs.</i></p>
+    </section>
+
+    <!--Search Bar-->
+    <section class="search">
+        <div class="search-box">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" placeholder="Search homes...">
+            <select>
+                <option value="location">Location</option>
+                <option value="budget">Budget</option>
+                <option value="both">Both</option>
+            </select>
+    </div>
+    </section>
+
+    <!--Available Homes Section-->
+    <section class="homes">
+        <h2>Rental Properties</h2>
+        <div class="homes-grid">
+            <div class="homes-card">
+                <img src="house1/home.jpg" alt="home 1">
+                <h3>Cozy Cottage</h3>
+                <p><b>65,000 /month</b></p>
+                <p><i>Cozy unit in a quiet area with well-maintained interiors.</i></p>
+                <a href="house1.html"><button class="details">Details</button></a>
+            </div>
+
+            <div class="homes-card">
+                <img src="house2/home.jpg" alt="home 2">
+                <h3>Cedar Springs</h3>
+                <p><b>70,000 /month</b></p>
+                <p><i>Stunning 3-bedroom villa with a private garden and pool.</i></p>
+                <a href="house2.html"><button class="details">Details</button></a>
+            </div>
+
+            <div class="homes-card">
+                <img src="house3/image4.jpg" alt="home 3">
+                <h3>Nova Suites</h3>
+                <p><b>22,000 /month</b></p>
+                <p><i>Modern 2-bedroom apartment with high-end finishes and parking.</i></p>
+                <a href="house3.html"><button class="details">Details</button></a>
+            </div>
+
+            <div class="homes-card">
+                <img src="house4/image1.jpg" alt="home 4">
+                <h3>Bella Vista</h3>
+                <p><b>65,000 /month</b></p>
+                <p><i>Cozy 3-bedroom villa with a private garden and parking</i></p>
+                <a href="house4.html"><button class="details">Details</button></a>
+            </div>
+
+            <div class="homes-card">
+                <img src="house5/home.jpg" alt="home 5">
+                <h3>Harmony Homes</h3>
+                <p><b>45,000 /month</b></p>
+                <p><i>Modern 2-bedroom house with stylish interiors and a small garden.</i></p>
+                <a href="house5.html"><button class="details">Details</button></a>
+            </div>
+
+            <div class="homes-card">
+                <img src="house6/home1.jpg" alt="home 6">
+                <h3>Serenity Apartments</h3>
+                <p><b>75,000 /month</b></p>
+                <p><i>Spacious 3-bedroom apartment with private parking.</i></p>
+                <a href="house6.html"><button class="details">Details</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+        <p>&copy; 2025 Maska Agencies | All Rights Reserved</p>
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+</html>

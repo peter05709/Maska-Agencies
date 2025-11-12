@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background-color: rgba(145, 119, 119, 0.523);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+.header{
+    background-color: rgba(94, 100, 130, 0.675);
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.header h1{
+    color: #101111;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.nav1{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color:rgb(58, 60, 61);
+    transition: color 0.3s;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.nav1 a:hover{
+    color:rgb(137, 197, 250)
+}
+.login-box{
+    background-color: rgba(74, 184, 184, 0.089);
+    width: 400px;
+    height: 340px;
+    margin:auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px black;
+}
+.login-box h2{
+    padding: 20px;
+}
+.login-form input{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 80%;
+}
+.btn{
+    padding: 8px;
+    outline: none;
+    border: none;
+    align-items: center;
+    border-radius: 10px;
+    width: 50%;
+}
+.btn:hover{
+    background-color: rgba(0, 162, 255, 0.274);
+    padding: 10px;
+    cursor: pointer;
+}
+.register-box{
+    background-color: rgba(74, 184, 184, 0.089);
+    width: 400px;
+    height: 380px;
+    margin:auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 3px 3px 6px black;
+}
+.register-form input{
+    padding: 15px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    background-image: url('house1/home.jpg');
+    background-size: cover;
+    border-radius: 50%;
+}
+.navbar{
+    background-color: rgba(94, 100, 130, 0.675);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(14, 14, 15);
+    padding: 15px;
+    position: sticky;
+    z-index: 10;
+}
+
+.nav-links{
+    gap: 20px;
+    display: flex;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(16, 16, 16);
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color:rgb(155, 178, 198)
+}
+.welcome{
+    background-color: rgb(127, 145, 174);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome h1{
+    color:rgb(12, 12, 12);
+    text-shadow: #303030 0 4px 8px;
+}
+
+.welcome p{
+    color:rgb(14, 15, 15);
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(127, 145, 174);
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.733);
+    transition: all 0.3s ease;
+    width: 80%;
+    max-width: 500px;
+}
+
+.search-box input{
+    flex:1;
+    border: none;
+    outline: none;
+    font-size:16px;
+    padding: 8px;
+    background: transparent;
+}
+
+.search-icon {
+  color: #0c0b0b;
+  font-size: 18px;
+}
+
+.search-box select {
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    outline: none;
+    background-color: rgba(60, 85, 117, 0.807);
+}
+
+.search-box select:hover {
+  background: rgba(32, 30, 30, 0.295);
+}
+
+.homes{
+    text-align: center;
+    padding: 15px;
+}
+
+.homes h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #141616;
+    text-shadow: 0 4px 8px rgba(55, 131, 193, 0.801);
+}
+
+.homes-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+@media screen and (max-width:600px){
+    .homes-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        gap: 10px;
+    }
+}
+
+.homes-card{
+    background-color: rgb(127, 145, 174);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.733);
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homes-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.568);
+}
+
+.homes-card img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.homes-card h3{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #0b0b0b;
+}
+
+.homes-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: rgb(15, 15, 15);
+}
+
+.details{
+    background-color: rgba(44, 227, 252, 0.281);
+    color:aliceblue;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.details:hover{
+    background-color: rgba(18, 156, 236, 0.897);
+}
+
+.footer{
+    background-color: rgba(94, 100, 130, 0.675);
+    color: #070707;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.image-gallery {
+    max-width: 900px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.image-thumbnails {
+    display: flex;
+    transition: transform 1.1s ease;
+    gap: 10px;
+}
+
+.image-thumbnails img {
+    width: 100%;
+    max-width: 950px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 15px;
+    height: 250px;
+    border-top: 2px solid rgb(82, 121, 169);
+    border-bottom: 2px solid rgb(82, 121, 169);
+    border-right: 2px solid rgb(82, 121, 169);
+    border-left: 2px solid rgb(82, 121, 169);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(15, 14, 14, 0.853);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(242, 242, 238, 0.9);
+    color: #0b0b0b;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.description h2{
+    color: #090909;
+    text-shadow: #546ba7 0 3px 6px;
+    margin-bottom: 10px;
+}
+.description p{
+    color: #040404;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-style: oblique;
+}
+
+.landlord h3{
+    color: #090909;
+    text-shadow: #5175a8e9 0 3px 6px;
+    padding: 10px;
+}
+
+.landlord-form input, .landlord-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #3f6db1df;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.landlord-form button {
+    background-color: #4d6ca7f0;
+    color: rgba(15, 16, 16, 0.875);
+    border: none;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.landlord-form button:hover{
+    background-color: #0c0c0c;
+    color:#4369b1;
+}
+.about-content h2{
+    color: #090909;
+    text-shadow: #3b5bac 0 3px 6px;
+    margin-bottom: 10px;
+}
+.contact-cta h2{
+    color: #090909;
+    text-shadow: #3b5bac 0 3px 6px;
+    margin-bottom: 10px;
+}
+.why-choose-us h2{
+    color: #090909;
+    text-shadow: #3b5bac 0 3px 6px;
+    margin-bottom: 10px;
+}
+.features h3{
+    color: #090909;
+    text-shadow: #3b5bac 0 3px 6px;
+    margin-bottom: 10px;
+}
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.info-box i {
+  font-size: 30px;
+  color: #3a71b4;
+  margin-bottom: 10px;
+  text-shadow: #090909 0 3px 6px;
+}
+
+.info-box h3 {
+  color: #090909;
+  text-shadow: #3562b7 0 3px 6px;
+  margin-bottom: 5px;
+}
+
+.contact-form {
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.contact-form h2 {
+  color: #090909;
+  text-shadow: #315a97 0 3px 6px;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.faqs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+    background: #6f5353aa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.faq-item h3, .faqs h2 {
+    margin-bottom: 10px;
+    text-shadow: #3a4ea8 0 3px 6px;
+}
+
+.faq-item p {
+    color: #090909;
+    line-height: 1.6;
+}
+
+.faq-item a {
+    color: #0e7989;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}

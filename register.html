@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+    <header class="header">
+        <h1>Maska Agencies</h1>
+        <nav class="nav1">
+            <a href="register.html">Register</a>
+            <a href="index.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--Register form-->
+        <div class="register-box">
+            <h2>Register</h2>
+            <form id="registerForm" class="register-form">
+                <input id="fullname" type="text" name="fullname" placeholder="Fullname" required><br><br>
+                <input id="email" type="email" name="email" placeholder="Email" required><br><br> 
+                <input id="password" type="password" name="password" placeholder="Password" required><br><br>
+                <button class="btn" type="submit"><b>Register</b></button>
+            </form><br>
+            <p id="registerMessage"></p>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
