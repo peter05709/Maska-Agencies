@@ -274,17 +274,6 @@ body{
     bottom: 0;
     width: 100%;
 }
-.footer1{
-    background-color: rgba(94, 100, 130, 0.675);
-    color: #070707;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-    margin-top: 10px;
-    bottom: 0;
-    position: relative;
-    width: 100%;
-}
 
 .image-gallery {
     max-width: 900px;
